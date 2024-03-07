@@ -55,7 +55,3 @@ Problem 1 :
 		b) Replaced "Linuxassignment" with "docs"
 			Command : sed -i 's/Linuxassignment/docs/g' file1.txt
 
-
-
-
-
