@@ -1,0 +1,65 @@
+PART A
+
+Solutions :
+	
+	1. echo "Hello, World!" =>Display Hello, World!
+
+	2. name="Prductive" => It assigns the value "Productive" to the variable named 'name'
+
+	3. touch file.txt   =>	creates file "file.txt"
+	
+	4. ls -a => It will list all files and directories, including hidden ones
+
+	5. rm file.txt => Deletes file "file.txt"
+
+	6. cp file1.txt file2.txt  => copies content of file1 into file2 if file2 is already created. 
+				If file 2 is not created then it will be created and then contents will be copied.
+
+	7. mv file.txt /path/to/directory/ => It will move file "file.txt" to location of directory named "directory"
+
+	8. chmod 755 script.sh  => Provides permission of read, write and execute to User and read and write to group and other users.
+
+	9. grep "pattern" file.txt => This command will search for word "pattern" in file "file.txt"
+
+	10. kill PID => PID is a Process ID. This command will kill the process of which PID is entered.
+
+	11. mkdir mydir && cd mydir && touch file.txt && echo "Hello, World!" > file.txt && cat file.txt
+		=>	a. Creat directory named "mydir"
+			b. change directory and go to mydir
+			c. create file named "file.txt"
+			d. "Hello, world!" will be printed inside the file "file.txt"
+			e. This cammand will show us whats written inside the file "file.txt"
+
+	12. ls -l | grep ".txt" 
+		=> This command is used to list files in the current directory, and then filter the output to only display lines containing the ".txt" string.
+
+	13. cat file1.txt file2.txt | sort | uniq 
+		=> This command will combine the contents of file "file.txt" and "file2.txt",
+		sorts the ecombined lines and then removes duplicate lines, providing unique sorted lines from both files.
+
+	14. ls -l | grep "^d" 
+		=> It will list all the directories within the given directory in long format.
+	
+	15. grep -r "pattern" /path/to/directory/
+		=> It will search pattern in all files of given path in all directories and its subdirectories. 
+		If it finds any matches, it will print out the lines containing the pattern along with the filenames where the matches occurred.
+
+	16. cat file1.txt file2.txt | sort | uniq –d
+		=> Will show duplicate files only of both files "file1" and "file2" combined and sorted aphabetically or numerically.
+
+	17. chmod 644 file.txt 
+		=>sets the file permissions so that the owner can read and write the file, while members of the group and others can only read the file.
+
+	18. cp -r source_directory destination_directory
+		=> This will copy the contents of a source directory and its subdirectories recursively to a destination directory.
+	
+	19. find /path/to/search -name "*.txt" 
+		=>it will search recursively in "/path/to/search" and its subdirectories for files with names ending in ".txt",
+		and it will print out the paths of any files it finds that match this pattern.
+
+	20.  chmod u+x file.txt
+		=>it adds execute permissions for the owner of "file.txt"
+
+	21. echo $PATH
+		=>it will output a colon-separated list of directories that are included in your system's "PATH" variable.
+		The PATH variable contains a list of directories that the shell searches for executable files when a command is entered.
