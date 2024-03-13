@@ -1,0 +1,14 @@
+	Part C
+
+Question 1: Write a shell script that prints "Hello, World!" to the terminal.
+=> Step:
+		1.vi C1.sh		// created file and opened it
+		2. Esc+i		// Insert
+		3. Insert Data => echo "Hello, World!"
+		4. :wq			// save file and exit
+		5. chmod +x C1.sh	//Give execution permission
+		6. ./C1.sh		//Execute program => Displays "Hello, World!"
+
+Question 2: Declare a variable named "name" and assign the value "CDAC Mumbai" to it. Print the
+value of the variable. 
+=> Steps
