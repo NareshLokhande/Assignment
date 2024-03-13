@@ -1,0 +1,56 @@
+Problem 1 :
+
+	a). Navigate and list
+		- Used command cd to go to home directory.
+		- Contents of the Home directory found using ls command are 
+			{Cdac  Mahabharat  Naresh.txt  OS  snap  user1  user2}
+		- Created LinuxAssignment directory using mkdir command and then moved into that directory using cd LinuxAssignment. 
+
+	b). File Management
+		- Create file using touch file1.txt
+		- Using cat command display the content of the file.
+
+	c). Directory Management
+		- New directory named "docs" created using mkdir command
+
+	d). Copy and move files
+		- copied "file1.txt" to "docs" directory using the following command
+			command : cp ./LinuxAssignment/file1.txt ./LinuxAssignment/docs
+		- Renamed it as "file2.txt" using mv command
+			command : mv file1.txt file2.txt
+
+	e). Permission and ownership
+		- Changed permission using
+			command : chmod 744 file2.txt
+		- Changed User to current user
+			command : chown $(whoami) file2.txt
+
+	f). Final checklist : 
+		- Contents of root directory => Cdac  LinuxAssignment  Mahabharat  Naresh.txt  OS  snap  user1  user2
+		- Contents of LinuxAssignment => docs	file1.txt
+		- Contents of docs => file2.txt
+
+	g). File searching : 
+		a). For searching all files with etension ".txt" 
+			command : find . -type f -name "*.txt"
+		b). Found the specific word thursday in "file2.txt"
+			grep "Thursday" file2.txt
+
+	h). System Information : 
+		 - Using date command we can find system date and time.
+
+	i). networking :
+		a) To display the IP address used command : ip addr show
+		b) Used my server (127.0.0.1)
+			command : ping 127.0.0.1
+
+	j) File Compression :
+		a) To compress the "docs"=>create zip and use the following command we have to install zip
+			command : zip -r docs.zip docs
+		b) To unzip in new directory newDocs: unzip docs.zip -d newDocs
+
+	k) File editing :
+		a) To open File => vi file1.txt
+			Added "This is Naresh Lokhande"	
+		b) Replaced "Linuxassignment" with "docs"
+			Command : sed -i 's/Linuxassignment/docs/g' file1.txt
